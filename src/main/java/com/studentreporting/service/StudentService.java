@@ -1,12 +1,9 @@
 package com.studentreporting.service;
 
 import com.studentreporting.entities.Student;
-import com.studentreporting.entities.Subject;
-import com.studentreporting.entities.Semester;
-import com.studentreporting.entities.Marksteet;
+import com.studentreporting.entities.StudentMarks;
 
 import java.util.List;
-import java.lang.Integer;
 
 public interface StudentService {
 
@@ -17,4 +14,8 @@ public interface StudentService {
   public void updateStudent(Student student);
 
   public Integer createStudent(Student student);
+
+    List<Student> getStudents();
+
+    void addMarks(StudentMarks marks);
 }

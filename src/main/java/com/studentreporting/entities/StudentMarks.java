@@ -6,6 +6,11 @@ import org.springframework.data.elasticsearch.annotations.Document;
 @Document(indexName = "student-reporting", indexStoreType = "fs")
 public class StudentMarks {
 
+    @Id
+    private int id;
+
+    private Integer studentId;
+
     private String studentName;
 
     private String semester;
@@ -14,8 +19,13 @@ public class StudentMarks {
 
     private Integer marks;
 
-    @Id
-    private int id;
+    public Integer getStudentId() {
+        return studentId;
+    }
+
+    public void setStudentId(Integer studentId) {
+        this.studentId = studentId;
+    }
 
     public String getStudentName() {
         return studentName;

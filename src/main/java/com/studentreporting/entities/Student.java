@@ -1,19 +1,9 @@
 package com.studentreporting.entities;
 
-import java.util.List;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Collections;
-import java.util.Objects;
-import com.fasterxml.jackson.annotation.JsonFormat;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 
-import java.lang.Integer;
-import java.lang.String;
-import java.lang.Integer;
-import javax.validation.constraints.*;
-import javax.validation.Valid;
+import java.util.Objects;
 
 @Document(indexName = "student")
 public class Student {

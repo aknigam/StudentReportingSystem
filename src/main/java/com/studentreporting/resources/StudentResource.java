@@ -1,27 +1,20 @@
 package com.studentreporting.resources;
 
-import javax.inject.Inject;
-import org.springframework.stereotype.Component;
-import org.springframework.http.HttpStatus;
 import com.studentreporting.entities.Student;
-import com.studentreporting.entities.Subject;
-import com.studentreporting.entities.Semester;
-import com.studentreporting.entities.Marksteet;
-
 import com.studentreporting.service.StudentService;
-import java.util.List;
-import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
-import java.lang.Integer;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
+
+import javax.inject.Inject;
+import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
 
 @RestController
 @RequestMapping(
-    path = "/studentreporting/v1/planner/students",
+    path = "/studentreporting/v1/students",
     produces = "application/json",
     consumes = "application/json")
 public class StudentResource {

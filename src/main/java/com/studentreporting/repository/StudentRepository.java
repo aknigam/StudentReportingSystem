@@ -1,16 +1,6 @@
 package com.studentreporting.repository;
 
-import org.springframework.dao.DataAccessException;
-import org.springframework.dao.DataIntegrityViolationException;
-import org.springframework.dao.DuplicateKeyException;
 import com.studentreporting.entities.Student;
-import com.studentreporting.entities.Subject;
-import com.studentreporting.entities.Semester;
-import com.studentreporting.entities.Marksteet;
-
-import java.lang.Integer;
-
-import java.util.List;
 
 public interface StudentRepository {
 

@@ -1,7 +1,5 @@
 package com.studentreporting.entities;
 
-import org.springframework.data.elasticsearch.annotations.Document;
-
 import java.util.Objects;
 
 

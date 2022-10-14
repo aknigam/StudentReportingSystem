@@ -1,16 +1,7 @@
 package com.studentreporting.entities;
 
-import java.util.List;
-import java.util.Map;
 import java.util.HashMap;
-import java.util.Collections;
-import java.util.Objects;
-import com.fasterxml.jackson.annotation.JsonFormat;
-import java.lang.Integer;
-import java.lang.String;
-import java.lang.Integer;
-import javax.validation.constraints.*;
-import javax.validation.Valid;
+import java.util.Map;
 
 public enum Semester {
   FIRST(1, "first"),
